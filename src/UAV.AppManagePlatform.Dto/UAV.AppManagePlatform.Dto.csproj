@@ -71,6 +71,7 @@
     <Compile Include="UI\easyUI\DataGrid.cs" />
     <Compile Include="UI\easyUI\TreeGrid.cs" />
     <Compile Include="UI\IndexPageDto.cs" />
+    <Compile Include="UI\PermissionMenuActionDto.cs" />
     <Compile Include="UI\Response\ResponseDto.cs" />
   </ItemGroup>
   <ItemGroup>

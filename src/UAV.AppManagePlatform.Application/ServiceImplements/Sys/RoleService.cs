@@ -6,6 +6,8 @@ using UAV.AppManagePlatform.Application.ServiceInterfaces.Sys;
 using UAV.AppManagePlatform.Domain.Entities.Authorization;
 using UAV.AppManagePlatform.Domain.Repositories.Authorization;
 using UAV.AppManagePlatform.Dto.Business.Sys.RoleManage;
+using Ls.Model;
+using System;
 
 namespace UAV.AppManagePlatform.Application.ServiceImplements.Sys
 {
