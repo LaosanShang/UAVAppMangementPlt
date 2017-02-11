@@ -15,6 +15,7 @@ namespace UAV.AppManagePlatform.Repository.Mapping.Authorization
             this.HasKey(x => x.Id);
             this.Property(x => x.Name)
                 .IsRequired();
+
             this.HasOptional(t => t.Parent)
                 .WithMany(t => (IList<Permission>)t.Children)
                 .WillCascadeOnDelete(false);

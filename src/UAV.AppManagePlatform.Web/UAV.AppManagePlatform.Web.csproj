@@ -307,6 +307,24 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UAV.AppManagePlatform.Application\UAV.AppManagePlatform.Application.csproj">
+      <Project>{5f57a1f7-64a1-45fe-a18f-99fb33455ad6}</Project>
+      <Name>UAV.AppManagePlatform.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UAV.AppManagePlatform.Domain\UAV.AppManagePlatform.Domain.csproj">
+      <Project>{197d261d-295d-4e6d-be4a-3b86e0ec0ded}</Project>
+      <Name>UAV.AppManagePlatform.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UAV.AppManagePlatform.Dto\UAV.AppManagePlatform.Dto.csproj">
+      <Project>{43548d4a-edd4-4099-b046-93f7ac86750a}</Project>
+      <Name>UAV.AppManagePlatform.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UAV.AppManagePlatform.Repository\UAV.AppManagePlatform.Repository.csproj">
+      <Project>{fdc94571-97e3-4cef-9871-3d476a491379}</Project>
+      <Name>UAV.AppManagePlatform.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

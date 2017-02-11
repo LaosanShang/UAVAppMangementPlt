@@ -9,7 +9,7 @@ namespace UAV.AppManagePlatform.Domain.Entities.Authorization
     /// <summary>
     /// 用户
     /// </summary>
-    public class User : CreatedLastUpdateSoftDeleteEntity
+    public class User : CreatedLastUpdateSoftDeleteEntity,IUser
     {
         #region 属性
         /// <summary>
@@ -68,7 +68,33 @@ namespace UAV.AppManagePlatform.Domain.Entities.Authorization
         /// 失败次数
         /// </summary>
         public int FailuerCounts { get; set; }
-        
+
+        IRole IUser.Role
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public DateTime LastUpdateTime
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         #endregion
 
         #region 方法

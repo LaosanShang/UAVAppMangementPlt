@@ -11,8 +11,5 @@ namespace UAV.AppManagePlatform.Dto.Business.Sys.MenuManage
     {
         [Display(Name = "菜单名称")]
         public string Name { get; set; }
-
-        [Display(Name = "菜单类型")]
-        public int? MenuType { get; set; }
     }
 }

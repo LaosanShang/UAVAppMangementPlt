@@ -14,9 +14,11 @@ namespace UAV.AppManagePlatform.Domain.Entities.Authorization
     public class Permission : Entity
     {
         private ICollection<Permission> _children;
-        /// <summary>
-        /// 菜单
-        /// </summary>
+
+        public string Name { get; set; }
+
+        public long? MenuId { get; set; }
+
         public virtual Menu Menu { get; set; }
 
         public ICollection<Permission> Children
@@ -24,9 +26,7 @@ namespace UAV.AppManagePlatform.Domain.Entities.Authorization
             get { return _children ?? (_children = new List<Permission>()); }
             set { _children = value; }
         }
-
-        public string Name { get; set; }
-
+        
         public Permission Parent { get; set; }
     }
 }
